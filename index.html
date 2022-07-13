@@ -3,12 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .bottom-left {
+            background-color: black;
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+        }
+
+        .top-left {
+            background-color: black;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+
+        .top-right {
+            background-color: black;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        .bottom-right {
+            background-color: black;
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+        }
+
+        .centered {
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
 </head>
 <body>
 
-<img alt="Original Hero" src="hero-original.jpg">
-<br/>
-<img alt="Web optimised hero" src="hero-optimised-example.jpg">
+<div class="container">
+    <img alt="Original width" src="hero-original.jpg">
+    <div class="bottom-left">Original width</div>
+    <div class="top-left">Original width</div>
+    <div class="top-right">Original width</div>
+    <div class="bottom-right">Original width</div>
+    <div class="centered">Original width</div>
+</div>
+<br><br>
+
+<div class="container">
+    <img alt="Fixed to 2500 pixel width" src="hero-original.jpg" style="width:2500px;">
+    <div class="bottom-left">Fixed to 2500 pixel width</div>
+    <div class="top-left">Fixed to 2500 pixel width</div>
+    <div class="top-right">Fixed to 2500 pixel width</div>
+    <div class="bottom-right">Fixed to 2500 pixel width</div>
+    <div class="centered">Fixed to 2500 pixel width</div>
+</div>
+<br><br>
+
+<div class="container">
+    <img alt="Fixed to 2000 pixel width" src="hero-original.jpg" style="width:2000px;">
+    <div class="bottom-left">Fixed to 2000 pixel width</div>
+    <div class="top-left">Fixed to 2000 pixel width</div>
+    <div class="top-right">Fixed to 2000 pixel width</div>
+    <div class="bottom-right">Fixed to 2000 pixel width</div>
+    <div class="centered">Fixed to 2000 pixel width</div>
+</div>
+<br><br>
+
+<div class="container">
+    <img alt="Fixed to 1500 pixel width" src="hero-original.jpg" style="width:1500px;">
+    <div class="bottom-left">Fixed to 1500 pixel width</div>
+    <div class="top-left">Fixed to 1500 pixel width</div>
+    <div class="top-right">Fixed to 1500 pixel width</div>
+    <div class="bottom-right">Fixed to 1500 pixel width</div>
+    <div class="centered">Fixed to 1500 pixel width</div>
+</div>
+<br><br>
+
+<div class="container">
+    <img alt="OriFixed to 1000 pixel width" src="hero-original.jpg" style="width:1000px;">
+    <div class="bottom-left">Fixed to 1000 pixel width</div>
+    <div class="top-left">Fixed to 1000 pixel width</div>
+    <div class="top-right">Fixed to 1000 pixel width</div>
+    <div class="bottom-right">Fixed to 1000 pixel width</div>
+    <div class="centered">Fixed to 1000 pixel width</div>
+</div>
+<br><br>
+
+<div class="container">
+    <img alt="Auto scale to screen width" src="hero-original.jpg" style="width:100%;">
+    <div class="bottom-left">Auto scale to screen width</div>
+    <div class="top-left">Auto scale to screen width</div>
+    <div class="top-right">Auto scale to screen width</div>
+    <div class="bottom-right">Auto scale to screen width</div>
+    <div class="centered">Auto scale to screen width</div>
+</div>
+<br><br>
 
 </body>
 </html>
